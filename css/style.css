@@ -1,0 +1,164 @@
+/* Default body styles */
+body {
+    color: white;
+    background: lightskyblue;
+    font-family: "Gochi Hand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 75px;
+}
+
+/* Navigation */
+header nav {
+    float: right;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 25px 25px 0 0;
+}
+
+header nav ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Slackey", serif;
+    font-size: 18px;
+}
+
+/* Headers */
+h1 {
+    font-size: 60px;
+    margin: 5px;
+    clear: both;
+}
+
+h2 {
+    font-size: 45px;
+    padding: 25px 0;
+}
+
+h3 {
+    font-size: 45px;
+    margin: 5px;
+}
+
+.header {
+    font-family: "Slackey", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#main-header {
+    padding: 100px 0;
+}
+
+/* Links */
+a {
+    color: white;
+}
+
+/* Images */
+img {
+    height: 200px;
+    border: 5px solid white;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Paragraphs */
+p {
+    margin: 5px;
+}
+
+/* Home Page */
+.home-page {
+    background: url("../img/background2.jpg");
+    background-size: cover;
+    font-size: 40px;
+}
+
+/* Parks page styles */
+
+.list {
+    width: 1200px;
+    font-size: 45px;
+}
+
+/* Hikes page styles */
+.board {
+    width: 1200px;
+    clear: both;
+}
+
+.block {
+    float: left;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.lower {
+    padding-top: 300px;
+}
+
+#mist {
+    background: url("../hikes/img/mist.jpg");
+    background-size: cover;
+}
+
+#hiddenlake {
+    background: url("../hikes/img/hiddenlake.jpg");
+    background-size: cover;
+}
+
+#avalanche {
+    background: url("../hikes/img/avalanche.jpg");
+    background-size: cover;
+}
+
+#narrows {
+    background: url("../hikes/img/narrows.jpg");
+    background-size: cover;
+}
+
+#center p {
+    padding-top: 150px;
+    font-size: 45px;
+}
+
+#moro {
+    background: url("../hikes/img/moro.jpg");
+    background-size: cover;
+    text-align: right;
+}
+
+#kaibab {
+    background: url("../hikes/img/kaibab.jpg");
+    background-size: cover;
+}
+
+#kaibab h3 {
+    color: darkgray;
+}
+
+#waterfall {
+    background: url("../hikes/img/waterfall.jpg");
+    background-size: cover;
+}
+
+#redwoods {
+    background: url("../hikes/img/redwood.jpg");
+    background-size: cover;
+}
