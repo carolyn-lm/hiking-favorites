@@ -3,16 +3,19 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Favorite Parks</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Slackey&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
     <header>
+        <h1 class="header">Favorite National Parks</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">home</a></li>
@@ -20,52 +23,22 @@
                 <li><a href="../hikes/index.html">hikes</a></li>
             </ul>
         </nav>
-        <h1 class="header">Favorite National Parks</h1>
     </header>
     <main>
-        <div class="list">
-            <ol>
-                <li>
-                    <div class="listed-item">
-                        <p>
-                            Yellowstone National Park
-                            <img src="img/yellowstone.jpg" alt="Yellowstone National Park">
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="listed-item">
-                        <p>
-                            <img src="img/smoky.jpg" alt="Smoky Mountains National Park">
-                            Smoky Mountains National Park
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="listed-item">
-                        <p>
-                            Arches National Park
-                            <img src="img/arches.jpeg" alt="Arches National Park">
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="listed-item">
-                        <p>
-                            <img src="img/bryce.jpeg" alt="Bryce Canyon National Park">
-                            Bryce Canyon National Park
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="listed-item">
-                        <p>
-                            Joshua Tree National Park
-                            <img src="img/joshua.jpg" alt="Joshua Tree National Park">
-                        </p>
-                    </div>
-                </li>
-            </ol>
+        <div class="park-wrapper">
+            <div id="park-list">
+                <ol>
+                    <li class="park highlighted" id="yellowstone">Yellowstone National Park</li>
+                    <li class="park" id="smoky">Smoky Mountains National Park</li>
+                    <li class="park" id="arches">Arches National Park</li>
+                    <li class="park" id="bryce">Bryce Canyon National Park</li>
+                    <li class="park" id="joshua">Joshua Tree National Park</li>
+                </ol>
+            </div>
+            <div id="park-img">
+                <img id="selected-park" src="img/yellowstone.jpg" alt="Yellowstone National Park">
+                <p>Click on a park name to change the picture</p>
+            </div>
         </div>
     </main>
 </body>

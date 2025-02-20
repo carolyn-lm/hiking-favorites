@@ -1,4 +1,7 @@
-/* Default body styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: white;
     background: lightskyblue;
@@ -6,115 +9,106 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    margin-left: 75px;
+    height: 100vh;
 }
 
-/* Navigation */
-header nav {
-    float: right;
-    text-align: right;
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* padding-bottom: 20px; */
 }
 
 header nav ul li {
-    display: inline-block;
-    padding: 25px 25px 0 0;
-}
-
-header nav ul a {
+    /* width: 100%; */
     text-transform: uppercase;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-family: "Slackey", serif;
-    font-size: 18px;
-}
-
-/* Headers */
-h1 {
-    font-size: 60px;
-    margin: 5px;
-    clear: both;
-}
-
-h2 {
-    font-size: 45px;
-    padding: 25px 0;
-}
-
-h3 {
-    font-size: 45px;
-    margin: 5px;
-}
-
-.header {
-    font-family: "Slackey", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-#main-header {
-    padding: 100px 0;
-}
-
-/* Links */
-a {
     color: white;
 }
 
-/* Images */
-img {
-    height: 200px;
-    border: 5px solid white;
-    vertical-align: middle;
-    margin-left: 10px;
+.content-wrapper,
+.park-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Paragraphs */
-p {
-    margin: 5px;
+#park-list {
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Home Page */
-.home-page {
-    background: url("../img/background2.jpg");
-    background-size: cover;
-    font-size: 40px;
+#park-img {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Parks page styles */
-
-.list {
-    width: 1200px;
-    font-size: 45px;
+#selected-park {
+    width: 90%;
+    margin: auto;
+    max-height: 90vh;
 }
 
-/* Hikes page styles */
-.board {
-    width: 1200px;
-    clear: both;
-}
-
-.block {
-    float: left;
-    box-sizing: border-box;
-    width: 400px;
-    height: 400px;
-
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
+#park-img p {
     text-align: center;
 }
 
-.lower {
-    padding-top: 300px;
+.highlighted {
+    color: navy;
+    font-size: 30px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block {
+    width: 400px;
+    height: 400px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hike-title {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.hike-location {
+    margin: 0;
 }
 
 #mist {
-    background: url("../hikes/img/mist.jpg");
+    background-image: url("../hikes/img/mist.jpg");
     background-size: cover;
 }
 
@@ -133,15 +127,13 @@ p {
     background-size: cover;
 }
 
-#center p {
-    padding-top: 150px;
-    font-size: 45px;
+#center {
+    display: none;
 }
 
 #moro {
     background: url("../hikes/img/moro.jpg");
     background-size: cover;
-    text-align: right;
 }
 
 #kaibab {
@@ -161,4 +153,48 @@ p {
 #redwoods {
     background: url("../hikes/img/redwood.jpg");
     background-size: cover;
+}
+
+/******** Tablet Media Query ********/
+@media only screen and (min-width: 768px) {
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/******** Desktop Media Query ********/
+@media all and (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    header h1 {
+        width: 40%;
+        border-bottom: none;
+    }
+
+    header nav {
+        width: 30%;
+    }
+
+    header nav ul {
+        padding-right: 50px;
+    }
+
+    .park-wrapper {
+        flex-direction: row;
+    }
+
+    #center {
+        display: flex;
+        font-size: 50px;
+        justify-content: center;
+    }
+
+    #center p {
+        margin: 0;
+    }
 }
