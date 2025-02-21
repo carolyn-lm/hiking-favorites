@@ -12,6 +12,13 @@ body {
     height: 100vh;
 }
 
+/* Home Page */
+.home-page {
+    background: url("../img/background2.jpg");
+    background-size: cover;
+    font-size: 40px;
+}
+
 /* Header styles */
 header {
     display: flex;
